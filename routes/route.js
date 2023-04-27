@@ -1,4 +1,5 @@
 var authMgr = require('../api/auth/authMgr');
+var productMgr = require('../api/feature/productMgr');
 
 
 exports.loadRoutes  = function(app){
@@ -10,4 +11,9 @@ exports.loadRoutes  = function(app){
 
     app.route('/api/v1/register')
     .post(authMgr.register) // Register API
+
+    //Product Schema
+    app.route('api/v1/getExclusiveOfferProduct')
+    .get(productMgr.getExclusiveProduct) //Exclusive API
+
 }

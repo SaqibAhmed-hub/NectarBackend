@@ -89,7 +89,6 @@ exports.register = (req, res) => {
                 return res.status(200).send({
                     statusCode: 200,
                     message: 'Register Successfully',
-                    data: register
                 })
             }
         })

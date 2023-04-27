@@ -25,7 +25,7 @@ connectDB();
 
 //To Start the server , type 
 //  npm run devStart 
-const port = process.env.PORT || 5001
+const port = process.env.PORT || 8080
 app.listen(port, () => {
     console.log(`server running on the port ${port}`)
 })
